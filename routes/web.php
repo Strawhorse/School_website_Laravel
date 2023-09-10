@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Directions;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,25 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Directions::class, "home"]);
 
-Route::get('/about', function() {
-    return view('about');
-});
+Route::get('/about', [Directions::class, "about"]);
 
-Route::get('/curriculum', function() {
-    return view('about');
-});
+Route::get('/curriculum', [Directions::class, "curriculum"]);
 
-Route::get('/queries', function() {
-    return view('about');
-});
+Route::get('/contact', [Directions::class, "contact"]);
 
-Route::get('/login', function() {
-    return view('about');
-});
+Route::get('/login', [Directions::class, "login"]);
+
 
 
 
