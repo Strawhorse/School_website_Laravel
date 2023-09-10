@@ -15,13 +15,9 @@ use App\Http\Controllers\Directions;
 */
 
 Route::get('/', [Directions::class, "home"]);
-
 Route::get('/about', [Directions::class, "about"]);
-
 Route::get('/curriculum', [Directions::class, "curriculum"]);
-
 Route::get('/contact', [Directions::class, "contact"]);
-
 Route::get('/login', [Directions::class, "login"]);
 
 
