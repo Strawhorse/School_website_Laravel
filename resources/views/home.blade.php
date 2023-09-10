@@ -11,5 +11,7 @@
     <a href="/contact">Contact us</a></br>
     <a href="/login">Login page</a></br>
     <p>This is a blade template</p>
+
+    <p>The current date and time is {{date('Y')}}</p>
 </body>
 </html>
