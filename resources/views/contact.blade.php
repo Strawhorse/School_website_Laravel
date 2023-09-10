@@ -13,15 +13,15 @@
 
     <section class="contact-header">
         <nav>
-            <a href="index.html"><img src="Images/logo.jpg" alt=""></a>
+            <a href="index.html"><img src="{{ asset('img/logo.jpg') }}" alt=""></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="curriculum.html">CURRICULUM</a></li>
-                    <li><a href="login.html">TEACHER LOGIN</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+                    <li><a href="/curriculum">CURRICULUM</a></li>
+                    <li><a href="/login">TEACHER LOGIN</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>

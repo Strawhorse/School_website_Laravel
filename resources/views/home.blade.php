@@ -17,11 +17,11 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="">CURRICULUM</a></li>
-                    <li><a href="">TEACHER LOGIN</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
+                    <li><a href="/contact">CONTACT US</a></li>
+                    <li><a href="/curriculum">CURRICULUM</a></li>
+                    <li><a href="/login">TEACHER LOGIN</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
