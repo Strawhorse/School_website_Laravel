@@ -2,10 +2,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>The School</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/30c799dc65.js"></script>
 </head>
 <body>
-    <h1>Contact page</h1><a href="/">Back to home</a>   
-    <p>This is a blade template</p>
+
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="curriculum.html">CURRICULUM</a></li>
+                    <li><a href="login.html">TEACHER LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>        
+        <h1>Contact Us</h1>
+    </section>
+
+        <!-- about us information for the school -->
+
+
+
+    <section class="blog-content">
+ 
+
+        <div class="comment-box">
+            <h1>Leave A Comment</h1>
+            <form action="contact_form.php" method="post" class="comment-form">
+                <input type="text" name="person_name" placeholder="Enter Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="number" name="telephone" placeholder="Telephone Number">
+                
+
+                <textarea name="contact_message" id="" cols="30" rows="5" placeholder="Leave Your Message Here" required></textarea>
+                <button type="" class="hero-btn red-btn">POST COMMENT</button>
+
+
+                <!-- add in JS verification/bot check here -->
+
+            </form>
+        </div>
+    </section>
+
+
+
+  
+
+    <!-- socials -->
+    <section class="socials">
+        <h4>Our Social Media Pages</h4>
+        <div class="icons">
+            <i class="fa fa-facebook fa-lg"></i>
+            <i class="fa fa-twitter fa-lg"></i>
+            <i class="fa fa-instagram fa-lg"></i> 
+        </div>
+
+        <p>Made by John Bracken, based on design from Easy Tutorials</p>
+    </section>
+    
+
+
+    <!-- move to top button -->
+    <button class="back-to-top" onclick="topFunction()">Back To Top</button>
+
+    <!-- add JS file -->
+    <script src={{ asset('js/script.js') }}></script>
 </body>
 </html>
