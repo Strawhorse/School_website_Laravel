@@ -37,6 +37,7 @@
         <div class="comment-box">
             <h1>Log In to School System</h1>
             <form action="/login" method="POST" class="comment-form">
+                @csrf
                 
                 <input type="email" name="email" id="email" placeholder="Email" required>
                
