@@ -36,7 +36,7 @@
 
         <div class="comment-box">
             <h1>Log In to School System</h1>
-            <form action="account/account-login.php" method="post" class="comment-form">
+            <form action="/login" method="POST" class="comment-form">
                 
                 <input type="email" name="email" id="email" placeholder="Email" required>
                
