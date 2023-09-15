@@ -39,10 +39,12 @@
             <form action="/login" method="POST" class="comment-form">
                 @csrf
                 
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="email" name="email" id="email" placeholder="Email" required value="{{old('email')}}">
+
                
-                <input type="password" name="password" id="password" placeholder="Enter password here" required>
-                
+                <input type="password" name="password" id="password" placeholder="Enter password here" value="{{old('password')}}" required>
+
+
                 <button type="" class="hero-btn red-btn">Log In</button>
                 
                 <!-- add in JS verification/bot check here -->
