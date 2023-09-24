@@ -109,7 +109,7 @@
 
     <section class="contact-us">
         <h1>Click Here For Enrolling</h1>
-        <a href="" class="hero-btn">CONTACT US!</a>
+        <a href="/contact" class="hero-btn">CONTACT US!</a>
     </section>
 
 
