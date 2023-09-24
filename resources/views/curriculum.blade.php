@@ -33,14 +33,20 @@
 
 
 
-    <section class="blog-content">
-        
-        <div class="coming-soon">
-            <img src="{{ asset('img/coming-soon.jpg') }}" alt="">
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>School Curriculum</h1>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+                <a href="" class="hero-btn red-btn">FIND OUT MORE</a>
+            </div>
+            
+            <div class="about-col">
+                <img src="{{ asset('img/books.jpg') }}" alt="">
+            </div>
         </div>
-        
     </section>
-
 
 
   
