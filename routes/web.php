@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Directions;
+use App\Http\Controllers\QueryController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -22,7 +23,10 @@ Route::get('/contact', [Directions::class, "contact"]);
 Route::get('/login', [Directions::class, "login"]);
 
 
+// route for submitting queries to database
+Route::post('/query', [QueryController:: class, "query"]);
 
+// route to log in
 Route::post('/login', [UserController::class, "login"]);
 
 
