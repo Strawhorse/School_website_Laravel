@@ -38,13 +38,15 @@
 
         <div class="comment-box">
             <h1>Leave A Comment</h1>
-            <form action="contact_form.php" method="post" class="comment-form">
-                <input type="text" name="person_name" placeholder="Enter Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+            <form action="/query" method="post" class="comment-form">
+                @csrf
+                <!-- to avoid the 419 error -->
+                <input type="text" name="person_name" placeholder="Enter Name" >
+                <input type="email" name="email" placeholder="Email Address" >
                 <input type="number" name="telephone" placeholder="Telephone Number">
                 
 
-                <textarea name="contact_message" id="" cols="30" rows="5" placeholder="Leave Your Message Here" required></textarea>
+                <textarea name="contact_message" id="" cols="30" rows="5" placeholder="Leave Your Message Here" ></textarea>
                 <button type="" class="hero-btn red-btn">POST COMMENT</button>
 
 
