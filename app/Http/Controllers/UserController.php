@@ -15,6 +15,7 @@ class UserController extends Controller
         ]);
 
         if (auth()->attempt(['email' => $incomingFields['email'], 'password' =>$incomingFields['password']])) {
+            $request ->session()->regenerate();
             return "Hello from login function";
         } else {
             return "Sorry";
