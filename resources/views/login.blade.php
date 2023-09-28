@@ -40,14 +40,9 @@
                 @csrf
                 
                 <input type="email" name="email" id="email" placeholder="Email" value="{{old('email')}}" required>
-
-               
                 <input type="password" name="password" id="password" placeholder="Enter password here" required>
-
-
                 <button type="" class="hero-btn red-btn">Log In</button>
                 
-                <!-- add in JS verification/bot check here -->
             </form>
         </div>
        

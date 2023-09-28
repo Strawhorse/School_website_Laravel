@@ -4,18 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class UserController extends Controller
 {
     public function login(Request $request) {
         $incomingFields = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required', 'min:3']
+            'email' => 'required',
+            'password' => 'required'
         ]);
 
-        // User::create($incomingFields);
+        if (auth()->attempt(['email' => $incomingFields['email'], 'password' =>$incomingFields['password']])) {
+            return "Hello from login function";
+        } else {
+            return "Sorry";
+        }
         
         
-        return "Hello from login function";
     }
 }
